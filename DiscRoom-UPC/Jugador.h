@@ -14,7 +14,7 @@ public:
 		dx = 0;
 		dy = 0;
 		ancho = 25;
-		alto = 60;
+		alto = 39;
 		indiceX = 0;
 		indiceY = 0;
 
@@ -45,12 +45,12 @@ public:
 
 		if (dy < 0)
 		{
-			if ((y + dy) >= 10)
+			if ((y + dy) >= 45)
 				y +=  dy;
 		}
 		else
 		{
-			if ((y + dy) <= 370)
+			if ((y + dy) <= 410)
 				y += dy;
 		}
 		
@@ -62,7 +62,7 @@ public:
 		{
 		case Direcciones::Arriba:
 			indiceX = 2;
-			if (indiceY >= 1 && indiceY <= 2)
+			if (indiceY >= 0 && indiceY < 2)
 				indiceY++;
 			else
 				indiceY = 0;
@@ -73,36 +73,34 @@ public:
 			break;
 		case Direcciones::Abajo:
 			indiceX = 0;
-			if (indiceY >= 1 && indiceY <= 2)
+			if (indiceY >= 0 && indiceY < 2)
 				indiceY++;
-
-			{
+			else
+			
 				indiceY = 0;
-			}
+			
 			dx = 0;
 			dy = 10;
 			ultimaT = Abajo;
 			break;
 		case Direcciones::Izquierda:
 			indiceX = 1;
-			if (indiceY >= 1 && indiceY <= 2)
+			if (indiceY >= 0 && indiceY < 2)
 				indiceY++;
 			else
-			{
 				indiceY = 0;
-			}
+			
 			dx = -10;
 			dy = 0;
 			ultimaT = Izquierda;
 			break;
 		case Direcciones::Derecha:
 			indiceX = 3;
-			if (indiceY >= 1 && indiceY <= 2)
+			if (indiceY >= 0 && indiceY < 2)
 				indiceY++;
 			else
-			{
 				indiceY = 0;
-			}
+			
 			dx = 10;
 			dy = 0;
 			ultimaT = Derecha;

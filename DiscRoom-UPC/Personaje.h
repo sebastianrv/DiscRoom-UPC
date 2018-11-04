@@ -7,8 +7,7 @@ class CPersonaje
 public:
 	CPersonaje(int x, int y)
 	{
-		this->x = x;
-		this->y = y;
+		
 	}
 	~CPersonaje() {}
 	virtual int getx() { return x; }

@@ -9,7 +9,23 @@ class CJuego
 public:
 	CJuego()
 	{
-		objJugador = new CJugador(60, 10);
+		objJugador = new CJugador(60, 60);
+		tiempoMapa = 0;
+		nivelJuego = 0;
+		comenzarJuego = false;
+	}
+	void IniciaJuego()
+	{
+		switch (nivelJuego)
+		{
+		case 0:
+		{
+
+
+		}
+		default:
+			break;
+		}
 	}
 	void dibujarJuego(Graphics ^g, Bitmap^ bmpNivel1, Bitmap^bmpBatman)
 	{
@@ -25,6 +41,9 @@ public:
 private:
 	CMapa * objMapa;
 	CJugador * objJugador;
+	int tiempoMapa;
+	bool comenzarJuego;
+	int nivelJuego;
 };
 
 

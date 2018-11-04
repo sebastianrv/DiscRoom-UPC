@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Juego.h"
-#include "Jugador.h"
+//#include "Jugador.h"
 namespace DiscRoomUPC {
 
 	using namespace System;
@@ -22,7 +22,7 @@ namespace DiscRoomUPC {
 		Bitmap ^ bmpNivel1 = gcnew Bitmap("todaimagen\\MapaNivel1.png");
 	private: System::Windows::Forms::Timer^  timer1;
 	public:
-		Bitmap ^ bmpBatman = gcnew Bitmap("todaImagen\\personajeBatman.png");
+		Bitmap ^ bmpBatman = gcnew Bitmap("todaImagen\\personajeBatmanPs.png");
 
 	public:
 		Formulario(void)
